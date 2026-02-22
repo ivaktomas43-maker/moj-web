@@ -186,3 +186,8 @@ body{
 /* FIX čitateľnosti hero textu */
 .hero h1 { color: #222 !important; }
 .hero p  { color: #555 !important; }
+.hero-logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 25px;
+}
