@@ -206,3 +206,6 @@ background-position: center center;
     pointer-events: none;
     z-index: -1;
 }
+.logo img {
+    height: 50px;
+}
