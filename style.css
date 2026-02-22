@@ -191,3 +191,18 @@ body{
   height: auto;
   margin-bottom: 25px;
 }
+/* BACKGROUND LOGO */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("./logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+
+    opacity: 0.05;   /* priehľadnosť loga */
+    pointer-events: none;
+    z-index: -1;
+}
