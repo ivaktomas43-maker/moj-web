@@ -157,8 +157,8 @@ input:focus, textarea:focus {
 .footer {
   text-align: center;
   padding: 22px;
-  color: #94a3b8;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #8a929c;
+ border-top: 1px solid #e5e5e5;
 }
 
 @media (max-width: 820px) {
