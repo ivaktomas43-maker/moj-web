@@ -202,7 +202,7 @@ body::before {
     background-position: center;
     background-size: 1100px;
 background-position: center center;
-    opacity: 0.4;   /* priehľadnosť loga */
+    opacity: 0.5;   /* priehľadnosť loga */
     pointer-events: none;
     z-index: -1;
 }
