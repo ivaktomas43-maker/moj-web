@@ -267,3 +267,22 @@ a:hover {
     height: 350px;
     border: 0;
 }
+/* FORM - aby bolo vidno čo píšeš */
+input, textarea {
+  color: #111;              /* farba textu */
+  background: #ffffff;      /* pozadie */
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888;              /* farba placeholderu */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #b79b7b;
+  box-shadow: 0 0 0 4px rgba(183,155,123,0.15);
+}
