@@ -183,3 +183,6 @@ body{
     radial-gradient(circle at 80% 20%, rgba(0,0,0,0.06), transparent 55%),
     linear-gradient(#f7f7f7, #efefef);
 }
+/* FIX čitateľnosti hero textu */
+.hero h1 { color: #222 !important; }
+.hero p  { color: #555 !important; }
