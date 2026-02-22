@@ -77,19 +77,19 @@ nav a:hover {
 
 button {
   button {
-  background: #b79b7b;
-  color: white;
-  border: none;
-  padding: 14px 26px;
-  border-radius: 12px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.25s;
+    background: #b79b5b;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  background: #a88968;
-  transform: translateY(-2px);
+    background: #9d844c;
+    transform: scale(1.05);
 }
 }
 
@@ -202,10 +202,19 @@ body::before {
     background-position: center;
     background-size: 1100px;
 background-position: center center;
-    opacity: 0.05;   /* priehľadnosť loga */
+    opacity: 0.4;   /* priehľadnosť loga */
     pointer-events: none;
     z-index: -1;
 }
 .logo img {
     height: 50px;
+}
+a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #b79b5b; /* zlatý nádych */
 }
