@@ -1,26 +1,39 @@
-// Rok do footeru
-document.querySelector("#year").textContent = new Date().getFullYear();
+// Rok vo footeri
+const yearEl = document.querySelector("#year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// CTA button scroll
-document.querySelector("#cta").addEventListener("click", () => {
-  document.querySelector("#kontakt").scrollIntoView({ behavior: "smooth" });
-});
+// Rezervácia cez WhatsApp
+const form = document.querySelector("#contactForm");
 
-// Formulár
-document.querySelector("#contactForm").addEventListener("submit", (e) => {
-  e.preventDefault();
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const name = document.querySelector("#name").value.trim();
-  const email = document.querySelector("#email").value.trim();
-  const message = document.querySelector("#message").value.trim();
+    const name = document.querySelector("#name")?.value.trim();
+    const phone = document.querySelector("#phone")?.value.trim();
+    const message = document.querySelector("#message")?.value.trim();
+    const status = document.querySelector("#status");
 
-  const status = document.querySelector("#status");
+    if (!name || !phone || !message) {
+      if (status) status.textContent = "Vyplň prosím všetky polia.";
+      return;
+    }
 
-  if (!name || !email || !message) {
-    status.textContent = "Vyplň prosím všetky polia.";
-    return;
-  }
+    const salonWhatsAppNumber = "421911151907"; // číslo mamy bez + a medzier
 
-  status.textContent = `Ďakujem ${name}! Ozvem sa ti čoskoro 😉`;
-  e.target.reset();
-});
+    const text =
+      `Rezervácia – Studio Andrea\n` +
+      `Meno: ${name}\n` +
+      `Telefón: ${phone}\n` +
+      `Správa: ${message}`;
+
+    const url = `https://wa.me/${salonWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+
+    if (status) status.textContent = "Otváram WhatsApp…";
+
+    window.open(url, "_blank");
+
+    // voliteľné: vymaže formulár až po otvorení WhatsApp
+    form.reset();
+  });
+}

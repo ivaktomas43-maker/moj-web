@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Studio Andrea - panske a dámske kaderníctvo</title>
+  <title>Studio Andrea - pánske kaderníctvo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="topbar">
     <div class="logo">
-    <img src="logo.png" alt="Studio Andrea">
-</div>
+      <img src="logo.png" alt="Studio Andrea">
+    </div>
     <nav>
       <a href="#o-mne">O mne</a>
       <a href="#sluzby">Služby</a>
@@ -20,71 +20,79 @@
   </header>
 
   <main class="container">
-   <section class="hero">
-  <img src="logo.png" alt="Studio Andrea logo" class="hero-logo">
-  <h1>Kaderníctvo Studio Andrea – strihy, farbenie, styling</h1>
-  <p>Príjemné prostredie, profesionálny prístup a výsledok, s ktorým budeš spokojný. Objednaj sa ešte dnes.</p>
-  <button>Objednať sa</button>
-</section>
+
+    <section class="hero">
+      <img src="logo.png" alt="Studio Andrea logo" class="hero-logo">
+      <h1>Kaderníctvo Studio Andrea – strihy, farbenie, styling</h1>
+      <p>Príjemné prostredie, profesionálny prístup a výsledok, s ktorým budeš spokojný. Objednaj sa ešte dnes.</p>
+      <button id="cta" type="button">Objednať sa</button>
     </section>
 
     <section id="o-mne" class="card">
       <h2>O mne</h2>
-      <p>Som kaderníčka s praxou. Robím pánske strihy,holenie brady a spoločenské účesy. Mojím cieľom je, aby si odchádzala s lepšou náladou aj účesom.</p>
+      <p>Som kaderníčka s praxou. Robím pánske strihy, holenie brady a spoločenské účesy. Mojím cieľom je, aby si odchádzal s lepšou náladou aj účesom.</p>
     </section>
 
     <section id="sluzby" class="grid">
       <div class="card">
-        <p><h2>Pánsky strih</h2>
-<p>Klasický aj moderný strih strojčekom a nožnicami.</p>
+        <h2>Pánsky strih</h2>
+        <p>Klasický aj moderný strih strojčekom a nožnicami.</p>
       </div>
+
       <div class="card">
-       <p><h2>Fade / moderný strih</h2>
-<p>Presné prechody, styling a úprava podľa trendu.</p>
+        <h2>Fade / moderný strih</h2>
+        <p>Presné prechody, styling a úprava podľa trendu.</p>
       </div>
+
       <div class="card">
-        <p><h2>Brada</h2>
-<p>Zastrihnutie, tvarovanie a úprava brady.</p>
+        <h2>Brada</h2>
+        <p>Zastrihnutie, tvarovanie a úprava brady.</p>
       </div>
     </section>
 
     <section id="kontakt" class="card">
       <h2>Kontakt</h2>
-      <p>📍Osuského 38 <br> 📞 <a href="tel:+421911151907">0911 151 907</a></p>
-     <div class="map-wrap">
-  <!-- https://maps.app.goo.gl/uPf5YLiUAuagCLhV9 -->
+      <p>📍 Osuského 38 <br> 📞 <a href="tel:+421911151907">0911 151 907</a></p>
+
+      <div clas<div class="map-wrap">
   <iframe
-    src="https://maps.app.goo.gl/uPf5YLiUAuagCLhV9"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.568514932869!2d17.11127211243156!3d48.11855877112147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89a74aa42749%3A0xe1422ba9087433a!2sOsusk%C3%A9ho%201649%2F38%2C%20851%2003%20Petr%C5%BEalka!5e0!3m2!1ssk!2ssk!4v1771762414110!5m2!1ssk!2ssk"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
     allowfullscreen>
   </iframe>
 </div>
+        </iframe>
+      </div>
+
       <form id="contactForm" class="form">
         <label>
           Meno
-          <input type="text" id="name" placeholder="Andrea Iváková" required />
+          <input type="text" id="name" placeholder="Tvoje meno" required />
         </label>
 
         <label>
-          Email
-          <input type="email" id="email" placeholder="ada.ivakova@gmail.com" required />
+          Telefón
+          <input type="tel" id="phone" placeholder="+421..." required />
         </label>
 
         <label>
           Správa
-          <textarea id="message" rows="4" placeholder="Napíš, aký strih chceš a kedy približne ti vyhovuje termín..." required></textarea>
+          <textarea id="message" rows="4" placeholder="Napíš, aký strih chceš a kedy ti vyhovuje termín..." required></textarea>
         </label>
 
         <button type="submit">Rezervovať termín</button>
       </form>
+
       <p id="status" class="status"></p>
     </section>
+
   </main>
 
   <footer class="footer">
-    © <span id="year"></span>|Studio Andrea
-
+    © <span id="year"></span> | Studio Andrea
   </footer>
+
   <script src="script.js"></script>
 </body>
+</html>
