@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomáš – Web stránky</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">Tomáš</div>
+    <nav>
+      <a href="#o-mne">O mne</a>
+      <a href="#sluzby">Služby</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Vytváram moderné webové stránky</h1>
+      <p>Rýchle, pekné a funkčné weby pre malé firmy a ľudí, ktorí chcú vyzerať profesionálne.</p>
+      <button id="cta">Chcem web</button>
+    </section>
+
+    <section id="o-mne" class="card">
+      <h2>O mne</h2>
+      <p>Som Tomáš a učím sa tvoriť weby. Mojím cieľom je robiť stránky, ktoré vyzerajú dobre a prinášajú výsledky.</p>
+    </section>
+
+    <section id="sluzby" class="grid">
+      <div class="card">
+        <h2>Landing page</h2>
+        <p>Jednoduchá stránka na prezentáciu služby alebo produktu.</p>
+      </div>
+      <div class="card">
+        <h2>Firemný web</h2>
+        <p>Stránka s podstránkami: O nás, služby, kontakt, galéria.</p>
+      </div>
+      <div class="card">
+        <h2>Úpravy a servis</h2>
+        <p>Texty, obrázky, rýchlosť, drobné opravy a aktualizácie.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="card">
+      <h2>Kontakt</h2>
+      <form id="contactForm" class="form">
+        <label>
+          Meno
+          <input type="text" id="name" placeholder="Tvoje meno" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" placeholder="tomas@email.com" required />
+        </label>
+
+        <label>
+          Správa
+          <textarea id="message" rows="4" placeholder="Napíš, aký web chceš..." required></textarea>
+        </label>
+
+        <button type="submit">Odoslať</button>
+      </form>
+      <p id="status" class="status"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Tomáš – Web stránky
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
