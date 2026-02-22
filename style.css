@@ -1,22 +1,35 @@
 * { box-sizing: border-box; }
 
 body {
+  body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f2f2;
+  color: #2b2b2b;
+}
 }
 
 .topbar {
+  .topbar {
   position: sticky;
   top: 0;
+  background: white;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 16px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 22px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+nav a {
+  color: #444;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b79b7b;
+}
 }
 
 .logo {
@@ -41,8 +54,16 @@ nav a:hover {
 }
 
 .hero {
+  .hero {
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+              url("https://images.unsplash.com/photo-1622287162716-4a4b2c6d4f9d?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 110px 20px;
   text-align: center;
-  padding: 70px 0 40px;
+  border-radius: 18px;
+  margin-bottom: 35px;
+}
 }
 
 .hero h1 {
@@ -59,27 +80,38 @@ nav a:hover {
 }
 
 button {
-  padding: 14px 22px;
-  font-size: 16px;
-  background: #22c55e;
+  button {
+  background: #b79b7b;
   color: white;
   border: none;
+  padding: 14px 24px;
   border-radius: 12px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 button:hover {
-  background: #16a34a;
-  transform: scale(1.03);
+  background: #a88968;
+  transform: scale(1.05);
+}
 }
 
+
+
 .card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+ .card {
+  background: white;
   border-radius: 16px;
-  padding: 18px;
-  margin: 16px 0;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
 }
 
 .card h2 {
@@ -132,4 +164,17 @@ input:focus, textarea:focus {
 @media (max-width: 820px) {
   .grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 34px; }
+}
+input, textarea {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  background: #fafafa;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #b79b7b;
+  background: white;
 }
